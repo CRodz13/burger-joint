@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  button {
+    @apply border border-black rounded-xl px-5 py-1
+  }
+}
+
+@layer utilities {
+  .dark {
+    --tw-bg-opacity: 1;
+    background-color: rgba(26, 32, 44, var(--tw-bg-opacity));
+  }
+  
+  .dark-text {
+    color: #f8f8f8;
+  }
+
+  .dark-button {
+    @apply border border-white rounded-xl px-5 py-1;
+    color: #f8f8f8;
+  }
+}
+
+.nav-link.dark-text {
+  color: #f8f8f8;
+}
+
+.food.dark {
+  background-color: #1a202c;
+}
+
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
